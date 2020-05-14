@@ -1,0 +1,31 @@
+﻿h1, h2, img ,legend{
+    font-size: 2em;
+    background-color: silver;
+    border: .1em rgb(29, 29, 29) solid;
+    font-family: 'times new roman', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 2em;
+    background-color: silver;
+    border: .1em rgb(29, 29, 29) solid;
+    font-family: 'times new roman', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+    font-size: 1em;
+   
+}
+
+
+
+body {
+  
+    background-color: darkred;
+
+}
+button {
+    font-size: 1em;
+    background-color: darkblue;
+    color: black;
+}

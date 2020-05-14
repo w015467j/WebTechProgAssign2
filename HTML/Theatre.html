@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<!--language is english  -->
+<link rel="stylesheet" href="css/Theatre.css"> <!--links to stylesheet  -->
+<head>
+    <!-- opening header tag -->
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Theatre tickets">
+    <title>Theatre tickets</title><!--allows name to show up in tab  -->
+
+</head>
+
+
+
+
+
+
+<body>
+    <h1>Theatre Tickets</h1> <!--text inside header tag  -->
+    <form id="BookingForm">
+        <!--sets form id  -->
+        <fieldset>
+            <!--groups logically related fields in a form -->
+            <legend>Name and Address</legend><!--Defines form name  -->
+            <p>
+                <!--New paragraph -->
+                <label for="Name">Name:</label><!--associates text label with an input type  -->
+                <input type="text" id="Name" name="Name" required><!--defines and sets what type of input the field is expecting  -->
+            </p>
+
+            <p>
+                <label for="Address">Address:</label>
+                <input type="text" id="Address" name="Address" required>
+            </p>
+
+            <h1>Show: </h1>
+
+            <p>
+
+                <form>
+                    <fieldset>
+                        <legend>Show:</legend>
+                        <input type="radio" id="PhantomOpera" name="shows" value="79.00" checked required>
+                        <label for="Poo">Phantom Opera</label>
+
+                        <input type="radio" id="Hamilton" name="shows" value="85.00" checked required>
+                        <label for="Ham">Hamilton</label>
+
+                        <input type="radio" id="Lionking" name="shows" value="67.00" checked required>
+                        <label for="Lion">Lion king</label>
+
+                        <input type="radio" id="MissSaigon" name="shows" value="83.00" checked required>
+                        <label for="MissSaigon">Miss Saigon</label>
+                    </fieldset>
+                </form>
+
+
+            <p>
+                <label for="SeatsRequired">Number of seats required:</label>
+                <input type=number id="SeatsRequired" name="SeatsRequired" required><!--sets lowest value at 0 so seats have to be booked -->
+            </p>
+            <p>
+                <h1 id="mod">Method of delivery: </h1>
+
+                <form id="methodOfD">
+                    <fieldset>
+                        <input type="radio" id="BoxOffice" name="MethOfD" value="1.50" checked required>
+                        <label for="Box">Box Office</label>
+
+                        <input type="radio" id="E-ticket" name="MethOfD" value="0.00" checked required>
+                        <label for="Eticket">E-ticket</label>
+
+                        <input type="radio" id="Posted" name="MethOfD" value="3.99" checked required>
+                        <label for="posted">Posted</label>
+
+
+                    </fieldset>
+                </form>
+
+            </p>
+
+            <p><button type="button" id="Book">Book tickets</button></p> <!--adds a button which allows us to confirm the booking-->
+            <div id="cost"></div>
+
+        </fieldset>
+    </form>
+    <p id="output"></p>
+    <script src="Scripts/theatre3.js"></script>
+</body>
+</html>
